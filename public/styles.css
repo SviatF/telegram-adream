@@ -643,3 +643,157 @@ h2 em{
     font-size:13px;
   }
 }
+
+/* 2026-10-05 desktop hero composition refinement */
+@media (min-width: 1101px){
+  .hero{
+    min-height: 860px;
+    height: 100svh;
+    max-height: 920px;
+  }
+
+  .hero-inner{
+    width:min(1320px,calc(100% - 96px));
+    padding:22px 0 28px;
+  }
+
+  .topbar{
+    align-items:center;
+  }
+
+  .brand-logo{
+    width:100px;
+  }
+
+  .brand-sub{
+    font-size:12px;
+  }
+
+  .hero-content{
+    grid-template-columns:560px 1fr;
+    gap:54px;
+    padding:18px 0 0;
+    align-items:center;
+  }
+
+  .hero-copy{
+    max-width:560px;
+    transform:translateY(-6px);
+  }
+
+  .eyebrow{
+    margin-bottom:14px;
+    font-size:11px;
+    letter-spacing:.18em;
+    opacity:.86;
+  }
+
+  .hero-copy h1{
+    line-height:.96;
+    letter-spacing:-.045em;
+  }
+
+  .hero-copy h1 span{
+    font-size:82px;
+  }
+
+  .hero-copy h1 strong{
+    font-size:58px;
+    margin-top:3px;
+    white-space:nowrap;
+  }
+
+  .hero-copy h1 small{
+    margin-top:12px;
+    font-size:26px;
+    line-height:1.06;
+    max-width:540px;
+  }
+
+  .lead{
+    max-width:535px;
+    margin:18px 0 16px;
+    font-size:16px;
+    line-height:1.48;
+    color:#d9d9d5;
+  }
+
+  .hero-info{
+    width:520px;
+    max-width:100%;
+    grid-template-columns:1fr 1fr;
+    column-gap:24px;
+    row-gap:12px;
+    padding:17px 18px;
+    border-radius:18px;
+  }
+
+  .hero-info .info-row:last-child{
+    grid-column:1 / -1;
+    max-width:260px;
+  }
+
+  .info-row{
+    grid-template-columns:26px 1fr;
+    gap:9px;
+  }
+
+  .info-row i{
+    font-size:17px;
+  }
+
+  .info-row b{
+    font-size:13px;
+  }
+
+  .info-row span{
+    font-size:10px;
+    margin-top:2px;
+  }
+
+  .hero-bottom{
+    width:760px;
+    max-width:760px;
+    margin-top:18px;
+  }
+
+  .hero-bottom .telegram-btn{
+    min-height:66px;
+    font-size:16px;
+    border-radius:16px;
+  }
+
+  .published{
+    margin-top:10px;
+    font-size:10px;
+  }
+
+  .telegram-icon{
+    width:40px;
+    height:40px;
+    font-size:17px;
+  }
+
+  .btn-arrow{
+    font-size:25px;
+  }
+
+  .hero-shade{
+    background:
+      linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.84) 31%,rgba(0,0,0,.48) 56%,rgba(0,0,0,.15) 100%),
+      linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.18) 58%,rgba(0,0,0,.62) 100%);
+  }
+
+  .hero-bg{
+    object-position:center center;
+  }
+}
+
+@media (min-width: 1500px){
+  .hero-inner{
+    width:min(1380px,calc(100% - 120px));
+  }
+  .hero-content{
+    grid-template-columns:590px 1fr;
+  }
+}
