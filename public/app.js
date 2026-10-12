@@ -11,6 +11,14 @@
         telegram_placement: placement,
         destination: 'https://t.me/adreamua'
       });
+
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+          content_name: 'Telegram CTA',
+          content_category: 'A_DREAM',
+          telegram_placement: placement
+        });
+      }
     });
   });
 
