@@ -9,7 +9,7 @@
       window.dataLayer.push({
         event: 'telegram_click',
         telegram_placement: placement,
-        destination: 'https://t.me/adreamua'
+        destination: 'https://t.me/+RP6a5EtC6jk2Njwt'
       });
 
       if (typeof window.fbq === 'function') {
